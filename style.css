@@ -19,6 +19,10 @@ header{
     font-weight: bold;
 }
 
+.timer.red {
+    color: red;
+}
+
 :root {
     --hue-neutral: 200;
     --hue-wrong: 0;
@@ -121,9 +125,4 @@ body.correct .answer-buttons, body.wrong .answer-buttons {
 
 .final-score {
 
-}
-
-
-.red {
-    color: red;
 }
