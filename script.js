@@ -64,12 +64,24 @@ function selectAnswer(e) {
         startButton.innerText = 'Restart'
         startButton.classList.remove('hide')
     }
+    if (shuffledQuestions.length == currentQuestionIndex + 1) {
+        setUserInitials();
+    }
     if (correct) {
         incrementScore();
     } else {
         decrementScore();
         alertTimer ();
     }
+}
+
+function setUserInitials() {
+    let userInitials;
+    document.querySelector(".initial-container").classList.remove("hide");
+    document.querySelector("#initialButton").addEventListener("click", function() {
+        userInitials = document.querySelector("#userInitials").value
+        document.querySelector("#enteredInitials").innerText = "Your Score: " + userInitials + " " + score + "/9"
+    })
 }
 
 function setStatusClass(element, correct) {
@@ -95,7 +107,7 @@ function decrementScore() {
     if (score > 0) {score--;}
     console.log(score);
     document.querySelector('.score').innerHTML = score
-    countDownTimerGlobal -= 6000;
+    countDownTimerGlobal -= 20000;
 }
 
 function setTimer() {
@@ -124,9 +136,9 @@ if (timeleft < 0) {
 }
 
 function alertTimer () {
-    document.querySelector('secs').classList.add('red')
+    document.querySelector('#secs').classList.add('red')
     setInterval(function() {
-        document.querySelector('secs').classList.remove('red')
+        document.querySelector('#secs').classList.remove('red')
     }, 3000)
 }
 
