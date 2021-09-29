@@ -12,7 +12,7 @@ Open a browser window, copy and past this link () into the URL section, and view
 
 Click the "Start" button;
 
-![nav](images/)
+![nav](images/image1.png)
 
 Take the quiz.
 
@@ -22,16 +22,19 @@ Enter your intials and view your score!
 
 To start the quiz, click the "Start" button:
 
-![nav](images/)
+![nav](images/image1.png)
 
 Click any of the answer buttons to answer each question and then click next to move on to the next question.
 
-![nav](images/)
+![nav](images/image2.png)
+
+![nav](images/image3.png)
 
 Once completed, you will be prompted to enter your intials and your final score will be recorded:
 
-![nav](images/)
+![nav](images/image5.png)
 
+![nav](images/image6.png)
  
 ## Built With
 
@@ -49,8 +52,8 @@ Alec Mackenzie
 
 ## Links
 
-Github Repo: 
-URL: 
+Github Repo: https://github.com/amackenzie26/code-quiz-project
+URL: https://amackenzie26.github.io/code-quiz-project/
 
 ## License
 
