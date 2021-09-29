@@ -1,12 +1,6 @@
-*{
+*, *::before, *::after {
     box-sizing: border-box;
-    color: black;
-}
-
-.big-box{
-    display:flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    font-family: sans-serif;
 }
 
 header{
@@ -17,79 +11,104 @@ header{
     color: #ffffff;
 }
 
-h1{
-
-}
-
-.timer{
-    padding-bottom: 0px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+.timer {
     float: right;
-    font-family: sans-serif,
+    display: inline-flex;
+    padding: 20px;
     font-size: 20px;
+    font-weight: bold;
 }
 
-.quiz-box{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding: 50px;
-    min-height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(var(--hue), 100%, 20%);
+}
+
+body.correct{
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+}
+
+body.correct .answer-buttons, body.wrong .answer-buttons {
+     /* disabling button with pointer-events: none; */
+     pointer-events: none;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 800px;
+    max-width: 80%;
+    height: 300px;
     background-color: lightseagreen;
-    color:black;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
 }
 
-.question-box{
-
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
 }
 
-.questions{
-
+.btn {
+    --hue: var(--hue--neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+}
+.btn:hover {
+    border-color: black;
 }
 
-.quiz-q{
-
+.btn.correct {
+ --hue: var(--hue-correct);
+ color: black;
 }
 
-h3{
-
+.btn.wrong {
+ --hue: var(--hue-wrong)
 }
 
-.answer-area{
-
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
 }
 
-.ansButton{
-display: inline-flex;
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.initial-input-prompt{
-
+.hide {
+    display: none;
 }
 
-.initial-input{
-
+.initial-input {
+    display: ;
 }
 
-.score-card{
-
-}
-
-.initials{
-
-}
-
-.score{
-
-}
-
-.start-button{
-
-}
-
-.btn{
-
+.red {
+    color: red;
 }

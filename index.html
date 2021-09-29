@@ -1,62 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Code Quiz</title>
-    <link rel="stylesheet" href="style.css"/>
-  </head>
-  
-  <body>
-    <div class="big-box">
-      <header>
-        <h1>Code Quiz</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="style.css" rel="stylesheet">
+        <script defer src="script.js"></script>
+        <title>Quiz</title>
+    </head>
+    <body>
+        <header>
+            <h1>Code Quiz</h1>
+            <div>
+                <time class="timer"></timer>
+                <p id="mins"></p>
+                <p id="secs"></p>
+                <p id="end"></p>
+            </div>
+        </header>
+        <div class="container">
+            <div id="question-container">
+                <div id="question"></div>
+                <div id="answer-buttons" class="btn-grid hide answer-buttons">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+                <div>
+                    <span class="score"> 0 </span>
+                    <span> /9 </span>
+                </div>
+            </div>
+        </div>
+
         <div>
-            <time class="timer">Timer</timer>
-        </div>
-      </header>
-      <div class="quiz-box">
-        <div class="question-box">
-          <h2>Questions</h2>
-        </div>
-        <div class="questions">
-            <div id="q1" class="quiz-q"></div>
-            <div id="q2" class="quiz-q"></div>
-            <div id="q3" class="quiz-q"></div>
-            <div id="q4" class="quiz-q"></div>
-            <div id="q5" class="quiz-q"></div>
-            <div id="q6" class="quiz-q"></div>
-            <div id="q7" class="quiz-q"></div>
-            <div id="q8" class="quiz-q"></div>
-            <div id="q9" class="quiz-q"></div>
-        </div>
-        <div class="answer-area">
-          <div>
-            <h3>Your Answer</h3>
-            <button id="button1" class="ansButton">Answer</button>
-            <button id="button2" class="ansButton">Answer</button>
-            <button id="button3" class="ansButton">Answer</button>
-            <button id="button4" class="ansButton">Answer</button>
-          </div>
-        </div>
-        <div class="initial-input-prompt">
-            <div>
-            <div class="initial-input">
-                <textarea>Initial Input</textarea>
-            </div>
+            <div id="initial-input">
+                <textarea>Please write you initials...</textarea>
             </div>
         </div>
-        <div class="score-card">
-            <div>
-                <div class="initals"></div>
-                <div class="score"></div>
-            </div>
-        </div>
-        <div class="start-button">
-          <button id="startbtn" class="btn">Start</button>
-        </div>
-      </div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+     
+    </body>
 </html>
