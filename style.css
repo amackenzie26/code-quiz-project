@@ -58,6 +58,7 @@ body.correct .answer-buttons, body.wrong .answer-buttons {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
+    font-size: 20px;
 }
 
 .btn-grid {
@@ -75,6 +76,7 @@ body.correct .answer-buttons, body.wrong .answer-buttons {
     padding: 5px 10px;
     color: black;
     outline: none;
+    font-size: 18px;
 }
 .btn:hover {
     border-color: black;
@@ -105,9 +107,22 @@ body.correct .answer-buttons, body.wrong .answer-buttons {
     display: none;
 }
 
-.initial-input {
-    display: ;
+.initial-container {
+    display: none;
 }
+
+.initial-input {
+    
+}
+
+.score-container {
+    display: none;
+}
+
+.final-score {
+
+}
+
 
 .red {
     color: red;

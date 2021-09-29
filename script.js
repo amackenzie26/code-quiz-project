@@ -212,11 +212,6 @@ const questions = [
         ]
     },
     
-    {
-        question: 'Your score:',
-        answers: [
-            { text: 'Initial Input', correct: true },
-            { text: 'Score', correct: true },
-        ]
-    }
+
 ]
+
