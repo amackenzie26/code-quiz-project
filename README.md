@@ -59,4 +59,4 @@ URL:
 
 Thank you for assistance from BCB Staff, W3schools.com, stackoverflow.com.
 
-I utilized a youtube tutorial: https://youtu.be/riDzcEQbX6k which incorportated portions through writing the code explained in the video of into my document. The tutorial was created by Web Dev Simplified and contributed to much of functionality of this application. Thank you to Web Dev Simplified for the assistance. 
+I utilized a youtube tutorial: https://youtu.be/riDzcEQbX6k by which I incorportated portions through writing the code explained in the video of into my own code. The tutorial was created by Web Dev Simplified and contributed to much of functionality of this application. Thank you to Web Dev Simplified for the assistance. 
